@@ -10,47 +10,25 @@ This lab includes the information for installing the following CLIs and plug-ins
 
 # Install the IBM Cloud command-line interface
 
-1. As a prerequisite for the IBM Cloud Container Service plug-in, install the [IBM Cloud command-line interface](https://clis.ng.bluemix.net/ui/home.html). Once installed, you can access IBM Cloud from your command-line with the prefix `bx`.
+1. Go to this link: https://www.katacoda.com/courses/kubernetes/playground
+2. Expand to full screen by clicking on the right hand icon beside the gear icon.
+![](https://paper-attachments.dropbox.com/s_D8A14BDF28207FA36C22286DD4C95973B9B2CC1251CEE085A6FB91263BC0E46C_1557185836656_Screen+Shot+2019-05-06+at+3.46.13+PM.png)
 
-Run `curl -sL https://ibm.biz/idt-installer | bash`
+3. As a prerequisite for the IBM Cloud Container Service plug-in, install the [IBM Cloud command-line interface](https://clis.ng.bluemix.net/ui/home.html) by running in the terminal`curl -sL https://ibm.biz/idt-installer | bash`. Once installed, you can access IBM Cloud from your command-line with the prefix `bx`.
 
-2. Log in to the IBM Cloud CLI: `ibmcloud login`.
-3. Enter your IBM Cloud credentials when prompted.
+4. Log in to the IBM Cloud CLI: `ibmcloud login`.
+Enter your IBM Cloud credentials when prompted.
 
    **Note:** If you have a federated ID, use `ibmcloud login --sso` to log in to the IBM Cloud CLI. Enter your user name, and use the provided URL in your CLI output to retrieve your one-time passcode. 
 
-# Install the IBM Cloud Container Service plug-in
-1. To create Kubernetes clusters and manage worker nodes, install the IBM Cloud Container Service plug-in:
-   ```ibmcloud plugin install container-service -r Bluemix```
-
-   **Note:** The prefix for running commands by using the IBM Cloud Container Service plug-in is `bx cs`.
-
-2. To verify that the plug-in is installed properly, run the following command:
+# Verify the IBM Cloud Container Service plug-in
+To verify that the plug-in is installed properly, run the following command:
 ```ibmcloud plugin list```
-
-   The IBM Cloud Container Service plug-in is displayed in the results as `container-service`.
+The IBM Cloud Container Service plug-in is displayed in the results as `container-service`.
 
 # Download the Kubernetes CLI
 
-To view a local version of the Kubernetes dashboard and to deploy apps into your clusters, you will need to install the Kubernetes CLI that corresponds with your operating system:
-
-* [OS X](https://storage.googleapis.com/kubernetes-release/release/v1.10.8/bin/darwin/amd64/kubectl)
-* [Linux](https://storage.googleapis.com/kubernetes-release/release/v1.10.8/bin/linux/amd64/kubectl)
-* [Windows](https://storage.googleapis.com/kubernetes-release/release/v1.10.8/bin/windows/amd64/kubectl.exe)
-
-**For Windows users:** Install the Kubernetes CLI in the same directory as the IBM Cloud CLI. This setup saves you some filepath changes when you run commands later.
-
-**For OS X and Linux users:**
-
-1. Move the executable file to the `/usr/local/bin` directory using the command `mv /<path_to_file>/kubectl /usr/local/bin/kubectl` .
-
-2. Make sure that `/usr/local/bin` is listed in your PATH system variable.
-```
-$echo $PATH
-/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
-```
-
-3. Convert the binary file to an executable: `chmod +x /usr/local/bin/kubectl`
+[Katacoda](https://www.katacoda.com/courses/kubernetes/playground#) has the latest version of Kubernetes CLI installed, no need to install for this tutorial. 
 
 # Download the Workshop Source Code
 Repo `guestbook` has the application that we'll be deploying.
