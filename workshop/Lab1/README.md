@@ -47,7 +47,7 @@ Once your client is configured, you are ready to deploy your first application, 
 
 In this part of the lab we will deploy an application called `guestbook`
 that has already been built and uploaded to DockerHub under the name
-`ibmcom/guestbook:v1`.
+`ibmcom/guestbook:v1`. For your information, the image with the code for our "guestbook" is contained here in the public Docker Hub registry: https://hub.docker.com/r/ibmcom/guestbook. 
 
 1. Start by running `guestbook`:
 
