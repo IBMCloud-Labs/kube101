@@ -148,7 +148,7 @@ To update and roll back:
    
    For your information, you can see v2 of the guestbook under the docker hub registry of tags: https://hub.docker.com/r/ibmcom/guestbook/tags
 
-5. If you want to undo your latest rollout, use:
+5. If you want to undo your latest rollout of V2 the guestbook Docker image, use:
    ```console
    $ kubectl rollout undo deployment guestbook
    deployment "guestbook"
