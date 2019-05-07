@@ -24,7 +24,7 @@ If you have a federated ID, use `ibmcloud login --sso` to get started.
 
 2. Target the Kubernetes Service region in which you want to work.
 
-    `ibmcloud ks region-set <your_region>
+    `ibmcloud ks region-set <your_region>`
 
 3. Get the command to set the environment variable and download the Kubernetes configuration files.
 
@@ -116,11 +116,12 @@ Congratulations, you've now deployed an application to Kubernetes!
 
 When you're all done, you can either use this deployment in the
 [next lab of this course](../Lab2/README.md), or you can remove the deployment
-and thus stop taking the course.
+and thus stop taking the course. DO NOT REMOVE the deployment if you are moving on to Lab 2. 
 
-  1. To remove the deployment, use `$ kubectl delete deployment guestbook`.
+1. To remove the deployment, use `$ kubectl delete deployment guestbook`.
 
-  2. To remove the service, use `$ kubectl delete service guestbook`.
+2. To remove the service, use `$ kubectl delete service guestbook`.
 
 You should now go back up to the root of the repository in preparation
-for the next lab: `$ cd ..`.
+for the next lab: `$ cd ..`
+
