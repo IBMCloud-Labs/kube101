@@ -151,6 +151,8 @@ To update and roll back:
 
    To verify that you're running "v2" of guestbook, look at the title of the page,
    it should now be `Guestbook - v2`
+   
+   For your information, you can see v2 of the guestbook under the docker hub registry of tags: https://hub.docker.com/r/ibmcom/guestbook/tags
 
 5. If you want to undo your latest rollout, use:
    ```console
