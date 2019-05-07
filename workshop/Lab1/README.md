@@ -28,7 +28,7 @@ If you have a federated ID, use `ibmcloud login --sso` to get started.
 
 3. Get the command to set the environment variable and download the Kubernetes configuration files.
 
-    ibmcloud ks cluster-config <name_of_your_cluster>
+    `ibmcloud ks cluster-config <name_of_your_cluster>`
 
 **Note**: You may need to wait and first check the status of the cluster. 
 `ibmcloud ks clusters | grep -i <name_of_your_cluster>`
