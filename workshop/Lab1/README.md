@@ -1,26 +1,51 @@
-# Lab 1. Set up and deploy your first application
+# Lab 1
 
-Learn how to deploy an application to a Kubernetes cluster hosted within
-the IBM Container Service.
+## Create and gain access to your cluster
 
-# 0. Install Prerequisite CLIs and Provision a Kubernetes Cluster
+**Create your cluster**
 
-If you haven't already:
-1. Install the IBM Cloud CLIs and login, as described in [Lab 0](../Lab0/README.md).
-2. Provision a cluster:
+1. Login to IBM Cloud in the browser. Click on the low hand menu where it says “Kubernetes.” 
+![](https://paper-attachments.dropbox.com/s_2C1D1D8DC07187847A6AF8315AD02FE0C0F2C847FF5808E191340C8D5AD46049_1557234589287_Screen+Shot+2019-05-06+at+11.06.40+PM.png)
 
-   ```$ ibmcloud cs cluster-create --name <name-of-cluster>```
+2. Click on “create a cluster” and select the “free” tier as shown in this screenshot. Click on the default resource group, and select the geography closest to you. 
+![](https://paper-attachments.dropbox.com/s_2C1D1D8DC07187847A6AF8315AD02FE0C0F2C847FF5808E191340C8D5AD46049_1557234676787_Screen+Shot+2019-05-06+at+11.07.46+PM.png)
 
-Once the cluster is provisioned, the kubernetes client CLI `kubectl` needs to be
-configured to talk to the provisioned cluster.
+3. Once you instantiate your cluster, you will be taken to this page with the following commands to gain access to your specific cluster. 
+![](https://paper-attachments.dropbox.com/s_2C1D1D8DC07187847A6AF8315AD02FE0C0F2C847FF5808E191340C8D5AD46049_1557235021993_Screen+Shot+2019-05-06+at+11.10.07+PM.png)
 
-1. Run `$ ibmcloud cs cluster-config <name-of-cluster>`, and set the `KUBECONFIG`
-   environment variable based on the output of the command. This will
-   make your `kubectl` client point to your new Kubernetes cluster.
 
-Once your client is configured, you are ready to deploy your first application, `guestbook`.
+**Gain access to your cluster**
 
-# 1. Deploy your application
+1. Log in to your IBM Cloud account.
+
+    ibmcloud login -a https://cloud.ibm.com
+
+If you have a federated ID, use `ibmcloud login --sso` to get started.
+
+2. Target the Kubernetes Service region in which you want to work.
+
+    `ibmcloud ks region-set <your_region>
+
+3. Get the command to set the environment variable and download the Kubernetes configuration files.
+
+    ibmcloud ks cluster-config <name_of_your_cluster>
+
+**Note**: You may need to wait and first check the status of the cluster. 
+`ibmcloud ks clusters | grep -i <name_of_your_cluster>`
+
+4. Set the KUBECONFIG environment variable. Copy the output from the previous command and paste it in your terminal. The command output should look similar to the following.
+
+    export KUBECONFIG=/Users/$USER/.bluemix/plugins/container-service/clusters/<name_of_your_cluster>/kube-config-wdc04-<name_of_your_cluster>.yml
+
+Alternatively, you can directly [**download**](#) your kubeconfig files to manually configure the cluster context.
+
+5. Verify that you can connect to your cluster by listing your worker nodes.
+
+    kubectl get nodes
+
+Once your client is configured, you are ready to deploy your first application, “guestbook.”
+
+## Deploy your application
 
 In this part of the lab we will deploy an application called `guestbook`
 that has already been built and uploaded to DockerHub under the name
