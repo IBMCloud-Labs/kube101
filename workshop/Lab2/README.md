@@ -70,7 +70,7 @@ resources to handle increasing load on your application.
    guestbook-562211614-zsp0j   1/1       Running   0          2m
    ```
 
-**Tip:** Another way to improve availability is to
+**Tip:** Another way to improve high vailability is to
 [add clusters and regions](https://console.bluemix.net/docs/containers/cs_planning.html#cs_planning_cluster_config)
 to your deployment, as shown in the following diagram:
 
