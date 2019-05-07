@@ -18,7 +18,7 @@
 
 1. Log in to your IBM Cloud account.
 
-    ibmcloud login -a https://cloud.ibm.com
+    `ibmcloud login -a https://cloud.ibm.com`
 
 If you have a federated ID, use `ibmcloud login --sso` to get started.
 
