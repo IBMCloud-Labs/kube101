@@ -37,8 +37,6 @@ If you have a federated ID, use `ibmcloud login --sso` to get started.
 
     export KUBECONFIG=/Users/$USER/.bluemix/plugins/container-service/clusters/<name_of_your_cluster>/kube-config-wdc04-<name_of_your_cluster>.yml
 
-Alternatively, you can directly [**download**](#) your kubeconfig files to manually configure the cluster context.
-
 5. Verify that you can connect to your cluster by listing your worker nodes.
 
     kubectl get nodes
