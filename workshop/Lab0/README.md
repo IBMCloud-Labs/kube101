@@ -28,7 +28,13 @@ The IBM Cloud Container Service plug-in is displayed in the results as `containe
 
 # Download the Kubernetes CLI
 
-[Katacoda](https://www.katacoda.com/courses/kubernetes/playground#) has the latest version of Kubernetes CLI installed, no need to install for this tutorial. 
+[Katacoda](https://www.katacoda.com/courses/kubernetes/playground#) has the latest version of Kubernetes CLI installed, no need to install for this tutorial.
+
+**IMPORTANT FYI**: Note that the [Katacoda Kubernetes](https://www.katacoda.com/courses/kubernetes/playground#) playground needs to be connected to the internet at all times or you will get this message.
+
+![](https://paper-attachments.dropbox.com/s_D8A14BDF28207FA36C22286DD4C95973B9B2CC1251CEE085A6FB91263BC0E46C_1557190439473_Screen+Shot+2019-05-06+at+5.47.35+PM.png)
+
+If you lock your laptop, restart, sleep, or leave your laptop to use the bathroom you will have to begin from scratch and install the CLIs from the top of this lab. Try to complete Lab 0, 1, and 2 in one sitting. 
 
 # Download the Workshop Source Code
 Repo `guestbook` has the application that we'll be deploying.
