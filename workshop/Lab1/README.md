@@ -39,7 +39,7 @@ If you have a federated ID, use `ibmcloud login --sso` to get started.
 
 5. Verify that you can connect to your cluster by listing your worker nodes.
 
-    kubectl get nodes
+    `kubectl get nodes`
 
 Once your client is configured, you are ready to deploy your first application, “guestbook.”
 
