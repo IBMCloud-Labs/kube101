@@ -42,4 +42,6 @@ While we're not going to build it we will use the deployment configuration files
 Guestbook application has two versions v1 and v2 which we will use to demonstrate some rollout
 functionality later. All the configuration files we use are under the directory guestbook/v1.
 
+**Gitbash download for Windows OS if Katacoda isn't working**: https://git-scm.com/download/win 
+
 
