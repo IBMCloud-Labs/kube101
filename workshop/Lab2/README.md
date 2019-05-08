@@ -89,7 +89,7 @@ To update and roll back:
 1. Using `kubectl`, you can now update your deployment to use the
    `v2` image. `kubectl` allows you to change details about existing
    resources with the `set` subcommand. We can use it to change the
-   image being used. The following command will trigger a rolling deployment of the new version. Meaning, each pod is updated one at a time, and your final deployment will have the same number of pods you had deployed before. 
+   image being used. The following command will trigger a rolling deployment of the new version. This means that each pod is updated one at a time, and your final deployment will have the same number of pods you had deployed before. 
 
     ```$ kubectl set image deployment/guestbook guestbook=ibmcom/guestbook:v2```
 
