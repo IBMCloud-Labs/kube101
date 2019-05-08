@@ -46,4 +46,6 @@ functionality later. All the configuration files we use are under the directory 
 
 **Use Kubernetes Playground: https://labs.play-with-k8s.com/
 
+Direct link: https://training.play-with-kubernetes.com/kubernetes-workshop/
+
 
