@@ -44,4 +44,6 @@ functionality later. All the configuration files we use are under the directory 
 
 **Gitbash download for Windows OS if Katacoda isn't working**: https://git-scm.com/download/win 
 
+**Use Kubernetes Playground: https://labs.play-with-k8s.com/
+
 
