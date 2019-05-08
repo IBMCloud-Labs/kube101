@@ -44,8 +44,10 @@ functionality later. All the configuration files we use are under the directory 
 
 **Gitbash download for Windows OS if Katacoda isn't working**: https://git-scm.com/download/win 
 
-**Use Kubernetes Playground: https://labs.play-with-k8s.com/
+**OR Use Kubernetes Playground if Katacoda isn't working**: 
 
-Direct link: https://training.play-with-kubernetes.com/kubernetes-workshop/
+1) https://kubernetes.io/docs/tasks/tools/install-kubectl/
+
+2) Run `curl -fsSL https://clis.cloud.ibm.com/install/linux | sh` and proceed to step 4 for terminal IBM Cloud login
 
 
