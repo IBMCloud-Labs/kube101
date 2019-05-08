@@ -71,7 +71,7 @@ resources to handle increasing load on your application.
    ```
 
 **Tip:** Another way to improve high vailability is to
-[add clusters and regions](https://console.bluemix.net/docs/containers/cs_planning.html#cs_planning_cluster_config)
+[add clusters and regions](https://cloud.ibm.com/docs/containers?topic=containers-ha&locale=en)
 to your deployment, as shown in the following diagram:
 
 ![HA with more clusters and regions](../images/cluster_ha_roadmap.png)
