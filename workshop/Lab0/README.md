@@ -46,7 +46,7 @@ functionality later. All the configuration files we use are under the directory 
 
 **OR Use Kubernetes Playground if Katacoda isn't working**: 
 
-1) https://kubernetes.io/docs/tasks/tools/install-kubectl/
+1) https://training.play-with-kubernetes.com/kubernetes-workshop/
 
 2) Run `curl -fsSL https://clis.cloud.ibm.com/install/linux | sh` and proceed to step 4 for terminal IBM Cloud login
 
